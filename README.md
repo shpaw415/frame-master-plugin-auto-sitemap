@@ -32,14 +32,14 @@ export default config;
 
 ## Configuration
 
-| Option | Type | Default | Description |
-|Str |Str |Str |Str |
-| `baseUrl` | `string` | **Required** | The base URL of your website (e.g., `https://example.com`). Required for generating valid sitemap URLs and sitemap index. |
-| `maxEntries` | `number` | `5000` | Maximum number of URLs per sitemap file. If exceeded, multiple sitemap files and a sitemap index will be generated. |
-| `authorizedExtensions` | `string[]` | `['html', 'js', 'txt', 'md', 'mdx']` | List of file extensions to include in the sitemap from the build output. |
-| `disableAutoEntries` | `boolean` | `false` | If `true`, disables automatic generation of entries from build outputs. |
-| `siteMapEntries` | `sitemapEntry[]` | `[]` | Array of custom sitemap entries to add manually. |
-| `parseAutoSiteMapEntries` | `function` | `(entry) => entry` | Function to transform automatically generated entries before adding them to the sitemap. |
+| Option                    | Type             | Default                              | Description                                                                                                               |
+| ------------------------- | ---------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| `baseUrl`                 | `string`         | **Required**                         | The base URL of your website (e.g., `https://example.com`). Required for generating valid sitemap URLs and sitemap index. |
+| `maxEntries`              | `number`         | `5000`                               | Maximum number of URLs per sitemap file. If exceeded, multiple sitemap files and a sitemap index will be generated.       |
+| `authorizedExtensions`    | `string[]`       | `['html', 'js', 'txt', 'md', 'mdx']` | List of file extensions to include in the sitemap from the build output.                                                  |
+| `disableAutoEntries`      | `boolean`        | `false`                              | If `true`, disables automatic generation of entries from build outputs.                                                   |
+| `siteMapEntries`          | `sitemapEntry[]` | `[]`                                 | Array of custom sitemap entries to add manually.                                                                          |
+| `parseAutoSiteMapEntries` | `function`       | `(entry) => entry`                   | Function to transform automatically generated entries before adding them to the sitemap.                                  |
 
 ### `sitemapEntry` Type
 
