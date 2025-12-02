@@ -144,7 +144,6 @@ export default function autoSitemap(
         }
       },
     },
-
     requirement: {
       frameMasterVersion: ">=2.0.0",
       bunVersion: ">=1.2.0",
