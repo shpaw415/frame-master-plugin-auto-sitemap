@@ -9,9 +9,7 @@ export default {
     autoSitemap({
       baseUrl: "https://example.com",
       authorizedExtensions: ["html"],
-      siteMapEntries: Array(7000).fill({
-        url: "someurl/allo.html",
-      } as sitemapEntry),
+      disableAutoEntries: true,
     }),
     {
       name: "entry-points",
