@@ -1,11 +1,11 @@
-# ${name}
+# Auto sitemap
 
 Frame-Master plugin
 
 ## Installation
 
 ```bash
-bun add auto-sitemap
+bun add frame-master-plugin-auto-sitemap
 ```
 
 ## Usage
