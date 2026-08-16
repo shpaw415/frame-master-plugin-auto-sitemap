@@ -1,6 +1,7 @@
 import type { FrameMasterPlugin } from "frame-master/plugin/types";
 import { join } from "path";
 import { join as joinUrl } from "frame-master/utils";
+import packageJson from "./package.json" with { type: "json" };
 
 export type sitemapEntry = {
   url: string;
@@ -145,7 +146,7 @@ export default function autoSitemap(
       },
     },
     requirement: {
-      frameMasterVersion: ">=2.0.0",
+      frameMasterVersion: packageJson.peerDependencies["frame-master"],
       bunVersion: ">=1.2.0",
     },
   };
